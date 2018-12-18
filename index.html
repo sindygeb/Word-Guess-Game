@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smash Bros Ultimate Hangman!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <img src="assets/images/smashBackground.jpg" id="smashPic">
+    <div>
+        <h1>Super Smash Bros Hangman!</h1>
+    </div>
+    <div class="clearfix"></div>
+    <section class="content">
+        
+        <div class="welcome">
+            <h4>
+                Welcome to Super Smash Bros. Hangman! 
+            </h4>
+            <p>
+                SSB is a fighting video game released by Nintendo, where Nintendo's greatest characters get together to battle it out!  
+            </p>
+        </div>
+        
+        <div class="question">
+            <p>
+                Can you guess which Nintendo character is displayed in the silhouette below?
+            </p>
+        </div>
+
+        <div>
+            <h4>How to Play:</h4>
+
+            <ol class="rules">
+                <li>
+                    Guess a letter by pressing a key on your keyboard.
+                </li>
+                <li>
+                    If your letter shows up - HEY! - You're one step closer to solving who it is!
+                </li>
+                <li>
+                    If your letter does NOT show up - BUMMER - but keep on guessing!
+                </li>
+                <li>
+                    You have 10 guesses to try and fill the blank.
+                </li>
+                <li>
+                    There are 15 characters to guess total! BUT be warned - once you lose, the game is over.
+                </li>
+                <li>
+                    If you get ALL 15, then YOU WIN!
+                </li>
+            </ol>
+
+            <h4>Good Luck!</h4>
+            <button id="startBtn" class="btn">START GAME!</button>
+        </div>
+    </section>
+    <section class="game">
+        <div class="guessWord"></div>
+        <br>
+        <div>
+            <strong>Wins: </strong><span id="winTotal"> 0 </span>
+            <br>
+            <strong>Letters Guessed: </strong><span id="lettersGuessed"> N/A </span>
+            <strong>Attempts Left: </strong><span id="attemptsLeft"> N/A </span>
+        </div>
+
+    </section>
+
+</body>
+</html>
