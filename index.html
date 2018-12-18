@@ -7,7 +7,6 @@
     <title>Smash Bros Ultimate Hangman!</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
     <img src="assets/images/smashBackground.jpg" id="smashPic">
@@ -24,44 +23,23 @@
         </div>
 
         <div>
-            <h4>How to Play:</h4>
-
-            <ol class="rules">
-                <li>
-                    Guess a letter by pressing a key on your keyboard.
-                </li>
-                <li>
-                    If your letter shows up - HEY! - You're one step closer to solving who it is!
-                </li>
-                <li>
-                    If your letter does NOT show up - BUMMER - but keep on guessing!
-                </li>
-                <li>
-                    You have 10 guesses to try and fill the blank.
-                </li>
-                <li>
-                    There are 15 characters to guess total! BUT be warned - once you lose, the game is over.
-                </li>
-                <li>
-                    If you get ALL 15, then YOU WIN!
-                </li>
-            </ol>
-
-            <h4>Good Luck!</h4>
             <button id="start-button" class="btn">Let's A-Go!</button>
         </div>
-    </section>
-    <section class="game">
-        <div id="placeholder"></div>
+        <br>
+        <div class="answer">
+            <span id="placeholders">Guess a letter!</span>
+        </div>
         <br>
         <div>
-            <strong>Wins: </strong><span id="win-total"> 0 </span>
+            <strong>Wins: </strong><span id="wins"></span>
             <br>
-            <strong>Letters Guessed: </strong><div id="letters-guessed"> N/A </div>
-            <strong>Attempts Left: </strong><div id="attempts-left"> N/A </div>
+            <strong>Letters Guessed: </strong><div id="guessed-letters"></div>
+            <br>
+            <strong>Guesses Left: </strong><div id="guesses-left"></div>
         </div>
 
     </section>
 
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
