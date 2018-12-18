@@ -17,28 +17,36 @@
     <section class="content">
         
         <div class="question">
-            <p>
+            <h2>
                 Can you guess which Nintendo character is displayed in the silhouette below?
-            </p>
+            </h2>
         </div>
 
+        <input type="button" value="Play That Epic Theme Music!"  onclick="play()" id="musicBtn">
+        <audio id="audio" src="assets/images/backgroundMusic.mp3" ></audio>
         <div>
             <button id="start-button" class="btn">Let's A-Go!</button>
         </div>
-        <br>
+        <br><br><br><br>
         <div class="answer">
-            <span id="placeholders">Guess a letter!</span>
+            <span id="placeholders">GUESS A LETTER!</span>
         </div>
         <br>
-        <div>
+        <div class="info">
             <strong>Wins: </strong><span id="wins"></span>
-            <br>
+            <br><br>
             <strong>Letters Guessed: </strong><div id="guessed-letters"></div>
-            <br>
+            <br><br>
             <strong>Guesses Left: </strong><div id="guesses-left"></div>
         </div>
 
     </section>
+    <footer>
+       <h5>Super Smash Bros. Ultimate and characters are property of Nintendo.
+           <br>
+           "Lifelight" Theme created by Hideki Sakamoto for Nintendo.
+       </h5>
+    </footer>
 
     <script src="assets/javascript/game.js"></script>
 </body>

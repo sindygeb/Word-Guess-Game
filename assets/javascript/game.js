@@ -4,7 +4,6 @@ var $placeholders = document.getElementById('placeholders');
 var $wins = document.getElementById('wins');
 var $guessedLetters = document.getElementById('guessed-letters');
 var $guessesLeft = document.getElementById('guesses-left');
-var mySound = new Mysound("completion.wav");
 
 //create array of words
 var characters = [
@@ -105,10 +104,10 @@ function checkWin() {
     if (pickedWord.toLowerCase() === pickedWordPlaceholderArr.join('').toLowerCase()) {
       wins++;
       $wins.textContent = wins;
-      mySound.play();
       newGame();  
     }
 }
+
 function bigWinner() {
     if (win === 15) {
         alert("Whoa buddy - that's a lotta wins! Way to go!"); {    
@@ -116,7 +115,10 @@ function bigWinner() {
     }
 }
 
-
+function play(){
+    var audio = document.getElementById("audio");
+    audio.play();
+}
 
 $newGameBtn.addEventListener('click', newGame);
 
