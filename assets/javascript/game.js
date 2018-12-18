@@ -5,7 +5,7 @@ var $wins = document.getElementById('wins');
 var $guessedLetters = document.getElementById('guessed-letters');
 var $guessesLeft = document.getElementById('guesses-left');
 
-//create array of words
+//create array of words (characters)
 var characters = [
     "link",
     "mario",
@@ -17,11 +17,15 @@ var characters = [
     "kirby",
     "luigi",
     "jigglypuff",
-    "zelda",
+    "princess zelda",
     "marth",
     "captain falcon",
-    "bowser"
+    "bowser",
+    "ness",
+    "princess peach"
 ];
+
+//create variables needed
 var wins = 0;
 var guessesLeft = 8;
 var gameRunning = false;
@@ -30,16 +34,19 @@ var pickedWordPlaceholderArr = [];
 var guessedLetterBank = [];
 var incorrectLetterBank = [];
 
+//start a new game
 function newGame() {
+    //to start and stop game
     gameRunning = true;
     guessesLeft = 8;
     guessedLetterBank = [];
     incorrectLetterBank = [];
     pickedWordPlaceholderArr = [];
 
-    //pick a new word
+    //pick a new word randomly
     pickedWord = characters[Math.floor(Math.random() * characters.length)];
 
+    //for loop to fill word with underscores or spaces
     for(var i = 0; i < pickedWord.length; i++) {
         if (pickedWord[i] === ' ') {
             pickedWordPlaceholderArr.push(' ');
@@ -54,9 +61,11 @@ function newGame() {
     $guessedLetters.textContent = incorrectLetterBank;
 }
 
+//when the user guesses a letter
 function letterGuess(letter) {
     console.log(letter);
 
+    //if the game is being played, and a letter is guessed, push the letter
     if (gameRunning === true && guessedLetterBank.indexOf(letter) === -1) {
         guessedLetterBank.push(letter);
 
