@@ -17,15 +17,6 @@
     <div class="clearfix"></div>
     <section class="content">
         
-        <div class="welcome">
-            <h4>
-                Welcome to Super Smash Bros. Hangman! 
-            </h4>
-            <p>
-                SSB is a fighting video game released by Nintendo, where Nintendo's greatest characters get together to battle it out!  
-            </p>
-        </div>
-        
         <div class="question">
             <p>
                 Can you guess which Nintendo character is displayed in the silhouette below?
@@ -57,17 +48,17 @@
             </ol>
 
             <h4>Good Luck!</h4>
-            <button id="startBtn" class="btn">START GAME!</button>
+            <button id="start-button" class="btn">Let's A-Go!</button>
         </div>
     </section>
     <section class="game">
-        <div class="guessWord"></div>
+        <div id="placeholder"></div>
         <br>
         <div>
-            <strong>Wins: </strong><span id="winTotal"> 0 </span>
+            <strong>Wins: </strong><span id="win-total"> 0 </span>
             <br>
-            <strong>Letters Guessed: </strong><span id="lettersGuessed"> N/A </span>
-            <strong>Attempts Left: </strong><span id="attemptsLeft"> N/A </span>
+            <strong>Letters Guessed: </strong><div id="letters-guessed"> N/A </div>
+            <strong>Attempts Left: </strong><div id="attempts-left"> N/A </div>
         </div>
 
     </section>
