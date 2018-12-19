@@ -22,7 +22,7 @@ h1 {
     background-color: #ffffff;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-top: 10px;
     margin: 0;
 }
@@ -61,7 +61,8 @@ button {
 }
 
 #placeholders {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 .answer {
     background-color: #727272;

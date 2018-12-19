@@ -15,14 +15,12 @@
     </div>
     <div class="clearfix"></div>
     <section class="content">
-        
         <div class="question">
             <h2>
                 Can you guess which Nintendo character is the secret word? 
-                <br>
+                <br><br>
                 Choose from the silhouettes below!
             </h2>
-            <p class="hint">Hint: Hover over the image for a clue!</p>
         </div>
         <br>
         <input type="button" value="Play That Epic Theme Music!"  onclick="play()" id="musicBtn">
@@ -32,16 +30,17 @@
         </div>
         <br><br><br><br>
         <div class="answer">
-            <span id="placeholders">GUESS A LETTER!</span>
+            <span id="placeholders">CLICK THE "LET'S A-GO" BUTTON AND GUESS A LETTER!</span>
         </div>
         <br>
         <div class="info">
-            <strong>Wins: </strong><span id="wins"></span>
+            <strong>Wins: </strong><span id="wins">0</span>
             <br><br>
-            <strong>Letters Guessed: </strong><div id="guessed-letters"></div>
+            <strong>Letters Guessed: </strong><span id="guessed-letters">None</span>
             <br><br>
-            <strong>Guesses Left: </strong><div id="guesses-left"></div>
+            <strong>Guesses Left: </strong><span id="guesses-left">0</span>
         </div>
+        <p class="hint">Hint: Hover over the images below for a clue!</p>
     </section>
     <div class="charPics">
         <div class="container">
@@ -142,7 +141,9 @@
         </div>
     </div>
     <footer>
-       <h5>Super Smash Bros. Ultimate and characters are property of Nintendo.
+       <h5>Hangman game created by Sindy Gebhard 2018
+           <br>
+           Super Smash Bros. Ultimate and characters are property of Nintendo.
            <br>
            "Lifelight" Theme created by Hideki Sakamoto for Nintendo.
        </h5>
